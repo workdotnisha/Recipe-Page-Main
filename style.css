@@ -3,21 +3,29 @@ body{
     padding: 2rem;
     color: #777574;
     font-family: "Roboto Slab", serif;
+    background-color: #F3E5D8;
+}
+.container{
+    background-color: #fff;
+    width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 img{
-    /* margin: 2rem; */
     border-radius: 1rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
-h1{
+.heading{
     color: #4F4B4B;
-    font-size: 85px;
+    font-size: 34px;
 }
 p{
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 .pre-time{
     margin: 1rem;
@@ -25,12 +33,12 @@ p{
     padding: 1rem;
 }
 h3{
-    font-size: 28px;
+    font-size: 26px;
     color: #7B304D;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 30px;
     color: #83503B;
 }
 .pre-time ul{
@@ -38,7 +46,7 @@ h2{
    
 }
 .pre-time ul li{
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 15px;
 }
 .pre-time ul li::marker{
@@ -51,7 +59,7 @@ h2{
 }
 
 .ingredient ul li{
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 15px;
     padding-left: 20px;
 }
@@ -61,7 +69,7 @@ h2{
 }
 
 .instruction ol li{
-    font-size: 22px;
+    font-size: 18px;
     padding-bottom: 15px;
     padding-left: 20px;
 }
@@ -79,7 +87,7 @@ table{
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 td{
     padding: 15px;
@@ -95,29 +103,45 @@ td{
 }
 
 @media screen and (max-width: 768px){
-    h1{
-        font-size: 40px;
+    body{
+        padding: 0rem;
+    }
+    .container{
+        width:100%;
+      background-color: #ffffff;
+      padding: 0rem;
+      margin: 0rem;
+    }
+    .detail-item{
+        padding: 1rem;
+    }
+    img{
+        width: 100%;
+        border-radius: 0rem;
+    }
+    .heading{
+        font-size: 30px;
     }
     p{
-        font-size: 18px;
+        font-size: 15px;
     }
     h2{
-        font-size: 28px;
+        font-size: 22px;
     }
     h3{
-        font-size: 24px;
-    }
-    .pre-time ul li{
-        font-size: 18px;
-    }
-    .ingredient ul li{
         font-size: 20px;
     }
+    .pre-time ul li{
+        font-size: 13px;
+    }
+    .ingredient ul li{
+        font-size: 13px;
+    }
     .instruction ol li{
-        font-size: 18px;
+        font-size: 14px;
     }
     table{
-        font-size: 18px;
+        font-size: 15px;
     }
     td{
         padding: 10px;
